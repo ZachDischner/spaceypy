@@ -1,4 +1,4 @@
-# orbitpy
+# orbitpy.
 Orbital Dynamics and Mission Design 
 
 Utilities built with a mix of existing (and awesome) `poliastro` and `astropy` libraries, as well as some home grown methods.
