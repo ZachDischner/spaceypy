@@ -1,12 +1,12 @@
 # SpaceyPy
-Some home-grown Orbital Dynamics and Mission Design tools written in Python. This is predominantly a learning expercise, definitely not supposed to be a competitive production ready library. Just a couple utils and fun demos of spacey stuff. 
+Some home-grown Orbital Dynamics and Mission Design tools written in Python. This is predominantly a learning expercise, definitely not supposed to be a competitive production ready library. Just a couple fun demos and projects as I teach myself some OD concepts. 
 
 Utilities built with a mix of existing (and awesome) `poliastro` and `astropy` libraries, as well as some home grown methods.
 
 ## Setup
 
 ### Python
-You just need a valid python 3.5 environment to get rolling. Either install dependencies yourself in existing environment, or use Anaconda. 
+You just need a valid python 3.5 environment to get rolling. Either install dependencies yourself in existing environment, or use Anaconda.
 
 Anaconda's Python distribution is recomended for getting started. Easiest way to get started is to install and create a new Python 3.5 environment from the included (not minimal) `py-environment.yml` file. 
 http://conda.pydata.org/docs/using/envs.html
