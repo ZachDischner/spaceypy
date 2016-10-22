@@ -1,5 +1,5 @@
-# orbitpy
-Orbital Dynamics and Mission Design 
+# SpaceyPy
+Some home-grown Orbital Dynamics and Mission Design tools written in Python. This is predominantly a learning expercise, definitely not supposed to be a competitive production ready library. Just a couple utils and fun demos of spacey stuff. 
 
 Utilities built with a mix of existing (and awesome) `poliastro` and `astropy` libraries, as well as some home grown methods.
 
@@ -26,9 +26,10 @@ Run example notebook for some samples. Note the use of `astropy.units` for all c
 Endless! 
 
 * Tests with pytest
+* Build a Propegator
+* Low thrust approximation with `poliastro.maneuver` objects
+* * Higher fidelity low thrust design class and propegator
 * Documentation on ancilary functions
 * Fix label positions in interplanetary trajectory plot
-* Low thrust approximation with `poliastro.maneuver` objects
-* Higher fidelity low thrust design class and propegator
-* Figure out how to do flybys
+* Figure out how to do flybys (lol like it just deserves one bullet)
 * More Spice integration
