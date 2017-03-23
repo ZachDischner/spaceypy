@@ -44,7 +44,7 @@ from astropy import time
 from astropy.units.quantity import Quantity
 from poliastro import ephem
 from poliastro.bodies import Sun, Earth
-from poliastro.twobody import State
+from poliastro.twobody import Orbit
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.patches as patches
@@ -351,8 +351,8 @@ def plot_basic_transfer(t_depart,t_arrive,depart_from="Earth",arrive_at="Mars",s
     r_arrival_body ,_, _, _ = planet_ephem(arrive_at, times_vec)
     r_trans                 = np.zeros_like(r_depart_body)
     r_trans[:,0]            = r1
-    xfer_orbit_depart       = State.from_vectors(Sun, r1, v1, t_depart)
-    xfer_orbit_arrive       = State.from_vectors(Sun, r2, v2, t_arrive)
+    xfer_orbit_depart       = Orbit.from_vectors(Sun, r1, v1, t_depart)
+    xfer_orbit_arrive       = Orbit.from_vectors(Sun, r2, v2, t_arrive)
 
     for ii in range(1, len(xfer_times)):
         tof = (xfer_times[ii] - xfer_times[0]) * u.day
@@ -544,7 +544,7 @@ def test():
 
     from poliastro import iod # This is the big one!
     from poliastro.bodies import Sun
-    from poliastro.twobody import State
+    from poliastro.twobody import Orbit
     from poliastro import ephem
     ephem.download_kernel("de421")
     ## MSL Stats from: http://mars.jpl.nasa.gov/msl/mission/overview/
